@@ -1,0 +1,25 @@
+.section-gallery {
+  padding-top: 0;
+  padding-bottom: 0;
+
+  background-image: linear-gradient(
+    to bottom,
+    $bg-color 40%,
+    $primary-text-color 40%
+  );
+}
+
+.container-gallery {
+  padding: 0;
+  // width: 100%;
+}
+
+.gallery-image {
+  transform: scale(0.9);
+  @include transit(transform);
+  transition-duration: 400ms;
+}
+.gallery-image:hover,
+.gallery-image:focus {
+  transform: scale(1);
+}
